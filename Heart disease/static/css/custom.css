@@ -1,0 +1,117 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.super_hero {
+    width: 90%;
+    margin: 5px auto;
+    box-sizing: border-box;
+    height: 1300px;
+    position: relative; /* Añadido para posicionar el contenido */
+}
+
+
+
+.main {
+    width: 50%; /* Ajusta el tamaño según sea necesario */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Elimina las flechas de los campos numéricos específicos en Chrome, Safari y Edge */
+#age::-webkit-outer-spin-button,
+#age::-webkit-inner-spin-button,
+#trestbps::-webkit-outer-spin-button,
+#trestbps::-webkit-inner-spin-button,
+#chol::-webkit-outer-spin-button,
+#chol::-webkit-inner-spin-button,
+#thalach::-webkit-outer-spin-button,
+#thalach::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Elimina las flechas en Firefox */
+#age,
+#trestbps,
+#chol,
+#thalach {
+    -moz-appearance: textfield;
+}
+
+button {
+    background-color: rgb(248, 82, 82);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(200, 50, 50);
+}
+
+.form-group button {
+    flex: 1 1 100%;
+}
+
+@media (max-width: 500px) {
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+}

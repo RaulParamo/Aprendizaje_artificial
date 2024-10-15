@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Predicción de Enfermedad Cardíaca</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/skeleton.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+</head>
+<body>
+    <div class="super_hero">
+        <header id="header" class="header">
+            <div class="container">
+                <h1>Heart Diseases</h1>
+            </div>
+        </header>
+        <div class="hero">
+            <div class="main">
+                <h1>Predicción de Enfermedad Cardíaca</h1>
+                <form action="/submit" method="POST">
+                    <div class="form-group">
+                        <label for="age">Edad:</label>
+                        <input type="number" id="age" name="age" min="0" max="120" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trestbps">Presión arterial:</label>
+                        <input type="number" id="trestbps" name="trestbps" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="chol">Colesterol:</label>
+                        <input type="number" id="chol" name="chol" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="thalach">Frecuencia cardíaca:</label>
+                        <input type="number" id="thalach" name="thalach" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="oldpeak">Depresión del ST:</label>
+                        <input type="number" step="0.1" id="oldpeak" name="oldpeak" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sex">Sexo:</label>
+                        <select id="sex" name="sex" required>
+                            <option value="0">Mujer</option>
+                            <option value="1">Hombre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cp">Dolor de pecho:</label>
+                        <select id="cp" name="cp" required>
+                            <option value="0">Angina típica</option>
+                            <option value="1">Angina atípica</option>
+                            <option value="2">Dolor no anginoso</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fbs">Azúcar en sangre > 120 mg/dl:</label>
+                        <select id="fbs" name="fbs" required>
+                            <option value="0">Falso</option>
+                            <option value="1">Verdadero</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="restecg">Electrocardiograma:</label>
+                        <select id="restecg" name="restecg" required>
+                            <option value="0">Normal</option>
+                            <option value="1">Anomalía ST-T</option>
+                            <option value="2">Hipertrofia ventricular</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exang">Angina inducida:</label>
+                        <select id="exang" name="exang" required>
+                            <option value="0">No</option>
+                            <option value="1">Sí</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="slope">Pendiente del ST:</label>
+                        <select id="slope" name="slope" required>
+                            <option value="0">Positiva</option>
+                            <option value="1">Plana</option>
+                            <option value="2">Negativa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ca">Vasos coloreados:</label>
+                        <select id="ca" name="ca" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="thal">Talasemia:</label>
+                        <select id="thal" name="thal" required>
+                            <option value="0">Normal</option>
+                            <option value="6">Defecto fijo</option>
+                            <option value="7">Defecto reversible</option>
+                        </select>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                
+            </div>
+              
+    </div>
+   
+    <footer id="footer" class="footer">
+    </footer>
+</body>
+</html>
